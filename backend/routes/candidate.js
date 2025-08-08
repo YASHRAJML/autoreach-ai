@@ -36,8 +36,13 @@ router.get('/profile/:id?', (req, res) => {
     return res.json({ profile });
   }
   
-  // Return demo profile if no ID provided
-  res.json({ profile: candidateProfiles[0] });
+  // Return most recently updated/created profile if no ID provided
+  const latestProfile = candidateProfiles.reduce((latest, curr) => {
+    const latestTime = new Date(latest.updatedAt || latest.createdAt || 0).getTime();
+    const currTime = new Date(curr.updatedAt || curr.createdAt || 0).getTime();
+    return currTime > latestTime ? curr : latest;
+  }, candidateProfiles[0]);
+  res.json({ profile: latestProfile });
 });
 
 // Create or update candidate profile
