@@ -1,0 +1,40 @@
+{
+  "jobs": [
+    {
+      "id": "sample-001",
+      "title": "Senior Frontend Engineer",
+      "department": "Engineering",
+      "hiringManager": "Alex Johnson",
+      "location": "Remote",
+      "description": "Build modern UI with React and TypeScript.",
+      "requirements": "React, TypeScript, CSS, testing",
+      "keySkills": ["React", "TypeScript", "CSS", "Jest"],
+      "seniority": "senior",
+      "remoteOption": true
+    },
+    {
+      "id": "sample-002",
+      "title": "Data Scientist",
+      "department": "Data Science",
+      "hiringManager": "Priya Singh",
+      "location": "New York, NY",
+      "description": "Modeling, ML pipelines, and stakeholder insights.",
+      "requirements": "Python, Pandas, scikit-learn",
+      "keySkills": ["Python", "Pandas", "scikit-learn", "SQL"],
+      "seniority": "mid",
+      "remoteOption": false
+    },
+    {
+      "id": "sample-003",
+      "title": "Product Manager",
+      "department": "Product",
+      "hiringManager": "Chris Kim",
+      "location": "Seattle, WA",
+      "description": "Lead roadmap and cross‑functional delivery.",
+      "requirements": "Backlog mgmt, user research, analytics",
+      "keySkills": ["Roadmap", "User Research", "Analytics", "Agile"],
+      "seniority": "senior",
+      "remoteOption": true
+    }
+  ]
+} 
